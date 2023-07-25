@@ -1,5 +1,5 @@
 {
-  "name": "view",
+  "name": "cakes-api-helper",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "sass": "^1.64.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
