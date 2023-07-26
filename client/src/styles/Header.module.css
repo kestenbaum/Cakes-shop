@@ -1,0 +1,14 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 104px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
