@@ -1,14 +1,104 @@
 .header {
-    position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: fixed;
     min-height: 104px;
     width: 100%;
     border-bottom: 1px solid black;
+    background-color: #CA8B81;
 }
 
-.nav {
+.container {
+    width: 100%;
+    max-width: 1198px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
     display: flex;
+    flex: 0 33.33%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigate {
+    display: flex;
+    width: 100%;
     gap: 20px;
+}
+
+.list__navigate {
+    display: flex;
+    justify-content: center;
+}
+
+.link__navigate {
+    font-size: 19px;
+    color: #000;
+}
+
+.icons__nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 50px;
+}
+
+/* burger menu */
+
+.burger {
+    display: none;
+}
+
+/* media */
+@media (max-width: 920px) {
+    .link__navigate {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 760px) {
+    .wrapper {
+        display: flex;
+        flex: 0 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigate {
+        display: none;
+    }
+
+    .icons__nav {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 70px;
+        padding: 17px;
+        position: absolute;
+        top: 104px;
+        right: -95px;
+        background-color: #CA8B81;
+        transition: .3s;
+    }
+
+    .icons__navActive {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 70px;
+        padding: 17px;
+        position: absolute;
+        top: 104px;
+        right: -15px;
+        background-color: #CA8B81;
+        transition: .3s;
+    }
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
 }
