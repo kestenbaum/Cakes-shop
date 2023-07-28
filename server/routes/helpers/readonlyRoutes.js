@@ -1,12 +1,12 @@
-import {routes} from "./helpers/index.js";
+import {routes} from "./names/index.js";
 
 export const readonlyRoute = {
     /**
      * auth
      */
-    LOGIN: routes.LOGIN[0].path,
-    LOGOUT: routes.LOGOUT[0].path,
-    REGISTRATION: routes.REGISTRATION[0].path,
+    LOGIN: routes.AUTH[0].path,
+    LOGOUT: routes.AUTH[1].path,
+    REGISTRATION: routes.AUTH[2].path,
     /**
      * users
      */
