@@ -1,6 +1,6 @@
 import {User} from "../models/index.js";
 import {getToken, verifyUser} from "../helpers/authHelper.js";
-import {errorResponse, successResponse} from "../helpers/responseHelper.js";
+import {errorResponse} from "../helpers/responseHelper.js";
 import statusCode from "../helpers/statusCodeHelper.js";
 
 
@@ -24,7 +24,7 @@ export default async function (req, res, next) {
         if (!user) {
             return errorResponse(res, {
                 status: statusCode.NOT_FOUND,
-                errors: ["user not found"]
+                errors: ["user not found. Unauthorized"]
             })
         }
         req.user = user
