@@ -12,3 +12,22 @@ export interface IconsProps {
     href: string,
     alt: string
 }
+
+//footer
+export interface ArrayMenuProps {
+    id: number,
+    link: string,
+    href: string
+}
+export interface FooterMenuProps {
+    id: number,
+    title: string,
+    mass: ArrayMenuProps[]
+}
+
+export interface FooterBtnProps {
+    img: any,
+    alt: string,
+    download: string,
+    services: string
+}

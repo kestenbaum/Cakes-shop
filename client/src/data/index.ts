@@ -1,4 +1,4 @@
-import {IconsProps, NavProps} from "@/interface";
+import {FooterMenuProps, IconsProps, NavProps} from "@/interface";
 
 export const getDataIcons: IconsProps[] = [
     {
@@ -48,4 +48,70 @@ export const getDataNav: NavProps[] = [
         href: "/",
         title: "Доставка"
     },
+]
+
+export const getFooterMenu:FooterMenuProps[] = [
+    {
+        id: 1,
+        title: "Каталог продукции",
+        mass: [
+            {
+                id: 1,
+                link: "Наборы",
+                href: "/combo"
+            },
+            {
+                id: 2,
+                link: "Акции",
+                href: "/action"
+            },
+            {
+                id: 3,
+                link: "Новинки",
+                href: "/news"
+            },
+        ],
+    },
+    {
+      id: 2,
+      title: "О магазине",
+      mass: [
+          {
+              id: 1,
+              link: "Отзывы",
+              href: "/reviews"
+          },
+          {
+              id: 2,
+              link: "Видео",
+              href: "/video"
+          },
+          {
+              id: 3,
+              link: "Вопросы/ответы",
+              href: "/question"
+          },
+      ],
+    },
+    {
+        id: 3,
+        title: "Для покупателей",
+        mass:  [
+            {
+                id: 1,
+                link: "Оплата",
+                href: "/payment"
+            },
+            {
+                id: 2,
+                link: "Как заказать",
+                href: "/help"
+            },
+            {
+                id: 3,
+                link: "Доставка",
+                href: "/delivery"
+            },
+        ],
+    }
 ]

@@ -15,7 +15,13 @@ const Header: FC = () => {
 
 
     return (
-        <header className={styles.header}>
+        <header
+            className={styles.header}
+            style={{
+                background: "transparent"
+            }}
+
+        >
             <div className={styles.container}>
                 <div className={styles.wrapper}>
                     <ul className={styles.navigate}>
