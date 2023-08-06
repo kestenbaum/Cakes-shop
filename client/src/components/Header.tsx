@@ -3,10 +3,9 @@ import React, {FC, useState} from 'react';
 
 import Link from "next/link";
 import Image from 'next/image'
+import {RxHamburgerMenu} from "react-icons/rx"
 
 import styles from "@/styles/Header.module.css"
-import {RxHamburgerMenu} from "react-icons/rx";
-
 import {getDataIcons, getDataNav} from "@/data";
 
 const Header: FC = () => {

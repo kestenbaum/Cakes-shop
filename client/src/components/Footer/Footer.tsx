@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
 
-import Link from "next/link";
-
 import styles from "@/styles/Footer.module.css"
 import FooterBtn from "@/components/Footer/FooterBtn";
 import android from "@/assets/icons/android.png"
 import apple from "@/assets/icons/apple.png"
 import {getFooterMenu} from "@/data";
+import FooterMenu from "@/components/Footer/FooterMenu";
+import FooterContact from "@/components/Footer/FooterContact";
 
 
 
@@ -16,14 +16,11 @@ const Footer:FC = () => {
             <div className="container">
                 <div className={styles.wrapper}>
                     {getFooterMenu.map(element => {
-                        return  <div key={element.id}>
-                            <h3 className={styles.title}>{element.title}</h3>
-                                <ul className={styles.list} key={element.id}>
-                                    {element.mass.map(link =>
-                                        <li><Link href={"/"} className={styles.link}/>{link.link}</li>
-                                    )}
-                                </ul>
-                        </div>
+                        return  <FooterMenu
+                            title={element.title}
+                            mass={element.mass}
+                            id={element.id}
+                        />
                     })}
                   <div>
                       <h4 className={styles.titleH4}>
@@ -42,11 +39,7 @@ const Footer:FC = () => {
                           services={"Google play"}
                       />
                   </div>
-                  <div className={styles.contact}>
-                      <h4 className={styles.titleH4}>Контакты</h4>
-                      <span className={styles.number}>+390876758734</span>
-                      <span className={styles.call}>Бесплатный звонок по Украине</span>
-                  </div>
+                 <FooterContact/>
                 </div>
             </div>
         </footer>
