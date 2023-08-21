@@ -1,3 +1,6 @@
+export interface HeaderProps {
+    background: string
+}
 export interface NavProps {
     id: number,
     href: string,

@@ -1,0 +1,44 @@
+.wrapper {
+    background-color: #FFEBF0;
+    width: 100%;
+    max-width:1198px;
+    padding: 104px 15px 0;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    padding: 20px 0;
+    gap: 23px;
+}
+
+.catalog {
+    display: flex;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.search {
+    display: flex;
+    cursor: pointer;
+    gap: 6px;
+}
+
+/*path*/
+.path {
+    display: flex;
+    padding: 20px 0;
+}
+
+.colorBlock {
+    display: flex;
+    height: 7px;
+    width: 12px;
+    background-color: #F8BDBD;
+}
+
+.pathItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

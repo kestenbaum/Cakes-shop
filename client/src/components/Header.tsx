@@ -7,8 +7,9 @@ import {RxHamburgerMenu} from "react-icons/rx"
 
 import styles from "@/styles/Header.module.css"
 import {getDataIcons, getDataNav} from "@/data";
+import {HeaderProps} from "@/interface";
 
-const Header: FC = () => {
+const Header: FC<HeaderProps> = ({background}) => {
     const [open, setOpen] = useState(false)
     const handlerMenu = () => setOpen(!open)
 
@@ -17,7 +18,7 @@ const Header: FC = () => {
         <header
             className={styles.header}
             style={{
-                background: "transparent"
+                background: background
             }}
 
         >

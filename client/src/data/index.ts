@@ -30,7 +30,7 @@ export const getDataIcons: IconsProps[] = [
 export const getDataNav: NavProps[] = [
     {
         id: 1,
-        href: "/",
+        href: "/catalog",
         title: "Обзоры"
     },
     {
