@@ -5,7 +5,16 @@ const FooterContact:FC = () => {
     return (
         <div className={styles.contact}>
             <h4 className={styles.titleH4}>Контакты</h4>
-            <span className={styles.number}>+390876758734</span>
+            <span 
+                className={styles.number}
+            >
+               <a
+                   href="tel:+390876758734"
+                   className={styles.tel}
+               >
+                   +390876758734
+               </a>
+            </span>
             <span className={styles.call}>Бесплатный звонок по Украине</span>
         </div>
     );
