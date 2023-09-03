@@ -5,7 +5,7 @@ export const getDataIcons: IconsProps[] = [
         id: 1,
         height: 37,
         width: 37,
-        href: "/",
+        href: "/favorites",
         src: "/icons/likes.png",
         alt: "likes",
     },
@@ -13,7 +13,7 @@ export const getDataIcons: IconsProps[] = [
         id: 2,
         height: 40,
         width: 40,
-        href: "/",
+        href: "/profile",
         src: "/icons/profile.png",
         alt: "profile"
     },
@@ -21,7 +21,7 @@ export const getDataIcons: IconsProps[] = [
         id: 3,
         height: 40,
         width: 40,
-        href: "/",
+        href: "/bucket",
         src: "/icons/bucket.png",
         alt: "basket"
     },
