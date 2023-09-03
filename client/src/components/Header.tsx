@@ -1,8 +1,10 @@
 "use client"
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 
 import Link from "next/link";
 import Image from 'next/image'
+import {usePathname} from "next/navigation";
+
 import {RxHamburgerMenu} from "react-icons/rx"
 
 import styles from "@/styles/Header.module.css"
@@ -11,8 +13,12 @@ import {HeaderProps} from "@/interface";
 
 const Header: FC<HeaderProps> = ({background}) => {
     const [open, setOpen] = useState(false)
+    const pathname = usePathname()
     const handlerMenu = () => setOpen(!open)
 
+    useEffect(() => {
+        setOpen(false)
+    }, [pathname])
 
     return (
         <header
@@ -24,7 +30,9 @@ const Header: FC<HeaderProps> = ({background}) => {
         >
             <div className={styles.container}>
                 <div className={styles.wrapper}>
-                    <ul className={styles.navigate}>
+                    <ul
+                        className={styles.navigate}
+                    >
                         {getDataNav.map(element =>
                             <li
                                 key={element.id}
@@ -45,7 +53,12 @@ const Header: FC<HeaderProps> = ({background}) => {
                         height={83}
                         alt="Picture of the author"
                     />
-                    <ul className={open ? styles.icons__navActive : styles.icons__nav}>
+                    <ul
+                        className={open ? styles.icons__navActive : styles.icons__nav}
+                        style={{
+                            background: background
+                        }}
+                    >
                         {getDataIcons.map(element =>
                             <li key={element.id}>
                                 <Link
