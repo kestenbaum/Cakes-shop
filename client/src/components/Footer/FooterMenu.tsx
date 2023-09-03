@@ -11,7 +11,12 @@ const FooterMenu = (element:FooterMenuProps ) => {
                 <h3 className={styles.title}>{element.title}</h3>
                 <ul className={styles.list} key={element.id}>
                     {element.mass.map(link =>
-                        <li><Link href={"/"} className={styles.link}/>{link.link}</li>
+                            <Link
+                                href={link.href}
+                                className={styles.link}
+                            >
+                                {link.link}
+                            </Link>
                     )}
                 </ul>
             </div>

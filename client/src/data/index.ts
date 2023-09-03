@@ -58,7 +58,7 @@ export const getFooterMenu:FooterMenuProps[] = [
             {
                 id: 1,
                 link: "Наборы",
-                href: "/combo"
+                href: "/catalog"
             },
             {
                 id: 2,

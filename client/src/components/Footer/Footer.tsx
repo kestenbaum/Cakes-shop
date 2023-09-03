@@ -1,12 +1,15 @@
 import React, {FC} from 'react';
 
 import styles from "@/styles/Footer.module.css"
+
 import FooterBtn from "@/components/Footer/FooterBtn";
-import android from "@/assets/icons/android.png"
-import apple from "@/assets/icons/apple.png"
-import {getFooterMenu} from "@/data";
 import FooterMenu from "@/components/Footer/FooterMenu";
 import FooterContact from "@/components/Footer/FooterContact";
+
+import android from "@/assets/icons/android.png"
+import apple from "@/assets/icons/apple.png"
+
+import {getFooterMenu} from "@/data";
 
 
 
