@@ -24,6 +24,10 @@ const Page:FC = () => {
                     <div className={styles.colorBlock}></div>
                     <Link href={"/catalog"}>Каталог</Link>
                 </div>
+
+            </div>
+            <div className={styles.main__block}>
+                Здесь пока нечего нет...
             </div>
         </section>
     );

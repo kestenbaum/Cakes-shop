@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "@/styles/MainPage.module.css"
+import Link from "next/link";
 
 export default function Home() {
    return (
@@ -15,7 +16,12 @@ export default function Home() {
                        <h1
                            className={styles.title}
                        >
-                           К сладостям
+                          <Link
+                              className={styles.link__catalog}
+                              href={"/catalog"}
+                          >
+                              К сладостям
+                          </Link>
                        </h1>
                    </div>
                </section>

@@ -37,6 +37,16 @@
     line-height: normal;
 }
 
+.link__catalog {
+    color: #FFEBF0;
+}
+
+.link__catalog:hover {
+    cursor: pointer;
+    color: darkgray;
+    transition: .5s;
+}
+
 @media all and (max-width: 400px){
     .wrapperTitle {
         display: flex;
