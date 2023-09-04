@@ -34,3 +34,9 @@ export interface FooterBtnProps {
     download: string,
     services: string
 }
+
+export interface IProfileAsideElement {
+    img: any,
+    link: string,
+    href: string
+}
