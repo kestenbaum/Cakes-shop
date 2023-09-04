@@ -5,13 +5,46 @@
     border: 1px solid rgba(209, 213, 219, 0.5);
 }
 
+.wrapper__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    padding: 24px;
+    transition: all .2s ease-in-out;
+    border: 3px solid #e9e9e9;
+    border-radius: 4px;
+}
+
 .btn {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     position: relative;
     text-align: left;
-    padding: 4px;
-    border: none;
     background: transparent;
     outline: none;
     cursor: pointer;
+    padding: 24px;
+    transition: all .2s ease-in-out;
+    border: 3px solid #e9e9e9;
+    border-radius: 4px;
+    margin-bottom: 10px ;
+}
+
+.btn:hover {
+    background-color: #CA8B81;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
 }

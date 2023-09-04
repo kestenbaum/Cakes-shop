@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 
 import styles from "@/styles/Accordion.module.css"
+import {FaArrowAltCircleDown, FaArrowAltCircleUp} from "react-icons/fa";
 const Accordion = (props:any) => {
     const [isShowing, setIsShowing] = useState(false);
 
@@ -18,10 +19,20 @@ const Accordion = (props:any) => {
                 onClick={toggle}
                 type="button"
             >
-                <p>{props.title}</p>
+                <p className={styles.wrapper__title}>
+                   {props.img}
+                    <span className={styles.title}>{props.title}</span>
+                </p>
+                {
+                    isShowing ?
+                        <FaArrowAltCircleUp className={styles.icon}/>
+                        :
+                        <FaArrowAltCircleDown className={styles.icon}/>
+                }
             </button>
             <div
-                style={{ display: isShowing ? "block" : "none", padding: "5px" }}
+                className={styles.content}
+                style={{ display: isShowing ? "block" : "none" }}
                 dangerouslySetInnerHTML={{
                     __html: props.content
                 }}
