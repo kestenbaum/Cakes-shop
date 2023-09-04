@@ -7,3 +7,46 @@
     height: 100%;
     min-height: calc(100vh - 104px);
 }
+
+/* aside */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+/* */
+
+/* ProfileAsideElement*/
+.profile__element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #221f1f;
+    transition: all .2s ease-in-out;
+}
+
+.profile__element:hover {
+    background-color: #CA8B81;
+}
+
+.icons__sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: #221f1f0d;
+    transition: all .2s ease-in-out;
+}
+
+.description {
+
+}
