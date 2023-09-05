@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import styles from "@/styles/Footer.module.css"
+import styles from "@/components/Footer/Footer.module.css"
 
 import FooterBtn from "@/components/Footer/FooterBtn";
 import FooterMenu from "@/components/Footer/FooterMenu";

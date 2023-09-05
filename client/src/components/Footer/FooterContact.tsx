@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import styles from "@/styles/Footer.module.css";
+import styles from "@/components/Footer/Footer.module.css";
 
 const FooterContact:FC = () => {
     return (

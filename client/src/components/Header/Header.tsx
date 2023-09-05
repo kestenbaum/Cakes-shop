@@ -7,7 +7,7 @@ import {usePathname} from "next/navigation";
 
 import {RxHamburgerMenu} from "react-icons/rx"
 
-import styles from "@/styles/Header.module.css"
+import styles from "@/components/Header/Header.module.css"
 import {getDataIcons, getDataNav} from "@/data";
 import {HeaderProps} from "@/interface";
 

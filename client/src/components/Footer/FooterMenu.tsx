@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 
-import styles from "@/styles/Footer.module.css";
+import styles from "@/components/Footer/Footer.module.css";
 import {FooterMenuProps} from "@/interface";
 
 const FooterMenu = (element:FooterMenuProps ) => {

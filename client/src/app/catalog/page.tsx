@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 import {RxHamburgerMenu} from "react-icons/rx"
 import {AiOutlineSearch} from "react-icons/ai"
 
-import styles from "@/styles/Catalog.module.css"
+import styles from "@/app/catalog/Catalog.module.css"
 import Link from "next/link";
 const Page:FC = () => {
     return (

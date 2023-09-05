@@ -2,7 +2,7 @@
     width: 100%;
     padding-top: 124px;
     height: 100vh;
-    background-image: url("../assets/main.png");
+    background-image: url(../assets/main.png);
     background-size: cover;
 }
 

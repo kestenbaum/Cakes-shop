@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "@/styles/MainPage.module.css"
+import styles from "@/app/MainPage.module.css"
 import Link from "next/link";
 
 export default function Home() {
