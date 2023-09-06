@@ -1,14 +1,12 @@
 import React, {FC} from 'react';
 
 import styles from "@/app/profile/Profile.module.css"
+
 import ProfileAsideElement from "@/components/Profile/ProfileAsideElement";
-import {CgProfile} from "react-icons/cg";
 import Accordion from "@/components/Accordion/Accordion";
-import {MdOutlineContactMail} from "react-icons/md";
+
+import {getAsideProfilePage, getMenuProfilePage} from "@/data/index"
 const Page:FC = () => {
-
-    const img = <CgProfile width={24} height={24}/>
-
     return (
         <section
             className={styles.wrapper}
@@ -16,16 +14,14 @@ const Page:FC = () => {
             <aside
                 className={styles.sidebar}
             >
-                <ProfileAsideElement
-                    img={img}
-                    link={"Name Vorname"}
-                    href={"/"}
-                />
-                <ProfileAsideElement
-                    img={img}
-                    link={"Name Vorname"}
-                    href={"/"}
-                />
+                {getAsideProfilePage.map(AsideElement => {
+                    return  <ProfileAsideElement
+                        id={AsideElement.id}
+                        img={ <AsideElement.img width={24} height={24}/>}
+                        link={AsideElement.link}
+                        href={AsideElement.href}
+                    />
+                })}
             </aside>
             <section className={styles.main}>
                 <h2
@@ -34,16 +30,14 @@ const Page:FC = () => {
                     Личные данные
                 </h2>
                 <div className={styles.block__information}>
-                    <Accordion
-                        img={<CgProfile className={styles.icon}/>}
-                        title="Личные данные"
-                        content="this is content 1"
-                    />
-                    <Accordion
-                        img={<MdOutlineContactMail className={styles.icon}/>}
-                        title="Контакты"
-                        content="this is content 1"
-                    />
+                    {getMenuProfilePage.map(menuElement => {
+                        return <Accordion
+                            id={menuElement.id}
+                            img={<menuElement.img className={styles.icon}/>}
+                            title={menuElement.title}
+                            content={menuElement.content}
+                        />
+                    })}
                 </div>
             </section>
         </section>
