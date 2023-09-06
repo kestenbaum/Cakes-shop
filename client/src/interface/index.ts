@@ -36,7 +36,15 @@ export interface FooterBtnProps {
 }
 
 export interface IProfileAsideElement {
+    id: number,
     img: any,
     link: string,
     href: string
+}
+
+export interface IProfileMenuElement {
+    id: number,
+    img: any,
+    title: string,
+    content: any
 }
