@@ -12,13 +12,7 @@ const ProfileAsideElement:FC<IProfileAsideElement> = ({img, link, href}) => {
             className={styles.profile__element}
             href={href}
         >
-            <Image
-                src={img}
-                alt={"picture"}
-                width={24}
-                height={24}
-                className={styles.icons__sidebar}
-            />
+            {img}
             <div className={styles.description}>
                 {link}
             </div>
