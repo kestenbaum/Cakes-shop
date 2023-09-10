@@ -40,7 +40,7 @@ export const getDataNav: NavProps[] = [
     {
         id: 1,
         href: "/catalog",
-        title: "Обзоры"
+        title: "Каталог"
     },
     {
         id: 2,

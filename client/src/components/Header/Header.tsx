@@ -35,14 +35,14 @@ const Header: FC<HeaderProps> = ({background}) => {
                     >
                         {getDataNav.map(element =>
                             <li
-                                key={element.id}
+                                key={element?.id}
                                 className={styles.list__navigate}
                             >
                                 <Link
-                                    href={element.href}
+                                    href={element?.href}
                                     className={styles.link__navigate}
                                 >
-                                    {element.title}
+                                    {element?.title}
                                 </Link>
                             </li>
                         )}
@@ -60,15 +60,15 @@ const Header: FC<HeaderProps> = ({background}) => {
                         }}
                     >
                         {getDataIcons.map(element =>
-                            <li key={element.id}>
+                            <li key={element?.id}>
                                 <Link
-                                    href={element.href}
+                                    href={element?.href}
                                 >
                                     <Image
-                                        src={element.src}
-                                        width={element.width}
-                                        height={element.height}
-                                        alt={element.alt}
+                                        src={element?.src}
+                                        width={element?.width}
+                                        height={element?.height}
+                                        alt={element?.alt}
                                     />
                                 </Link>
                             </li>
