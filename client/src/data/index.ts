@@ -49,7 +49,7 @@ export const getDataNav: NavProps[] = [
     },
     {
         id: 3,
-        href: "/",
+        href: "/reviews",
         title: "Отзывы"
     },
     {
