@@ -30,7 +30,7 @@ export const getDataIcons: IconsProps[] = [
         id: 3,
         height: 40,
         width: 40,
-        href: "/bucket",
+        href: "/basket",
         src: "/icons/bucket.png",
         alt: "basket"
     },
