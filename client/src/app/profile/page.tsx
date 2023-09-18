@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import styles from "@/app/profile/Profile.module.css"
+import styles from "@/app/profile/profile.module.css"
 
 import ProfileAsideElement from "@/components/Profile/ProfileAsideElement";
 import Accordion from "@/components/Accordion/Accordion";

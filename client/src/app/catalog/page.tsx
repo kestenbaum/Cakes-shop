@@ -5,7 +5,7 @@ import Link from "next/link";
 import {RxHamburgerMenu} from "react-icons/rx"
 import {AiOutlineSearch} from "react-icons/ai"
 
-import styles from "@/app/catalog/Catalog.module.css"
+import styles from "@/app/catalog/catalog.module.css"
 const Page:FC = () => {
     return (
         <section className={styles.wrapper}>

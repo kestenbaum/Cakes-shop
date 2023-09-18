@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import styles from "@/app/profile/Profile.module.css"
+import styles from "@/app/profile/profile.module.css"
 import {IProfileAsideElement} from "@/interface";
 
 import Image from "next/image";
