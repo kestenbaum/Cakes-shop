@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface HeaderProps {
     background: string
 }
@@ -47,4 +49,10 @@ export interface IProfileMenuElement {
     img: any,
     title: string,
     content: any
+}
+
+export interface IButton extends
+    React.DetailedHTMLProps<React.BaseHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+{
+    disabled?: boolean
 }
