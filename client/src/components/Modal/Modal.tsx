@@ -1,20 +1,22 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 
 import styles from "@/components/Modal/Modal.module.css"
+
 interface IModal {
     active: boolean,
     setActive: any,
     children: any
 }
 const Modal:FC<IModal> = ({active, setActive, children}) => {
-    const rootClasses = [styles.modal]
+
+    const rootClasses:string[] = [styles.modal]
+    if (active) rootClasses.push(styles.active)
 
     return (
         <section
-            className={active ? rootClasses.join(" ").replace("active", "") : rootClasses.join(" ")}
-            onClick={setActive(false)}
+            className={rootClasses.join(" ")}
         >
-            <div className={styles.modal__content}>
+            <div className={styles.wrapper}>
                 {children}
             </div>
         </section>
