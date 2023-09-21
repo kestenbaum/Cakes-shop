@@ -1,9 +1,13 @@
-import React, {FC} from 'react';
+"use client"
+import React, {FC, useState} from 'react';
 
 import styles from "@/components/AsideBasket/AsideBasket.module.css";
 import MainButton from "@/components/MainButton/MainButton";
+import Modal from "@/components/Modal/Modal";
 
 const AsideBasket:FC = () => {
+    const [active, setActive] = useState(false)
+
     return (
         <div className={styles.aside}>
             <h2 className={styles.title}>Ваша корзина</h2>
@@ -20,7 +24,14 @@ const AsideBasket:FC = () => {
                 <span className={styles.aside__title}>1999</span>
             </div>
             <div className={styles.promocode}>
-                <MainButton>У вас есть промокод?</MainButton>
+                <MainButton
+                    onClick={() => setActive(true)}
+                >
+                    У вас есть промокод?
+                </MainButton>
+                <Modal active={active} setActive={() => setActive(active)}>
+                    promocode
+                </Modal>
             </div>
             <MainButton>Продолжить</MainButton>
         </div>
