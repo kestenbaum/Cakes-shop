@@ -43,3 +43,10 @@
     gap: 20px   ;
     justify-content: flex-end;
 }
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}

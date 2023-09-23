@@ -4,6 +4,7 @@ import React, {FC, useState} from 'react';
 import styles from "@/components/AsideBasket/AsideBasket.module.css";
 import MainButton from "@/components/UI/MainButton/MainButton";
 import Modal from "@/components/UI/Modal/Modal";
+import Input from "@/components/UI/Input/Input";
 
 const AsideBasket:FC = () => {
     const [open, setOpen] = useState<boolean>(false)
@@ -30,7 +31,19 @@ const AsideBasket:FC = () => {
                     У вас есть промокод?
                 </MainButton>
                 <Modal showModal={open} setShowModal={setOpen}>
-                    Content
+                    <div
+                        className={styles.modal}
+                    >
+                        <Input
+                            name={"promocode"}
+                            placeholder={"У вас есть промокод?"}
+                        />
+                        <MainButton
+                            onClick={() => setOpen(false)}
+                        >
+                            Применить
+                        </MainButton>
+                    </div>
                 </Modal>
             </div>
             <MainButton>Продолжить</MainButton>
