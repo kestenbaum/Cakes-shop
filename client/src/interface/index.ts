@@ -51,8 +51,6 @@ export interface IProfileMenuElement {
     content: any
 }
 
+
 export interface IButton extends
-    React.DetailedHTMLProps<React.BaseHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-{
-    disabled?: boolean
-}
+    React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, React.AriaAttributes  {}

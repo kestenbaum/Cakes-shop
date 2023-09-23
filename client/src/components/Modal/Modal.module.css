@@ -1,31 +1,19 @@
-.modal {
+.modal{
     position: fixed;
-    height: 100vh;
-    width: 100vw;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 99999;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.wrapper{
+    padding: 25px;
+    background: #fff;
+    width: 80%;
+}
+.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.modal__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-}
-
-.modal.active {
-    opacity: 0;
-    transition: .5s;
-    pointer-events: all;
 }
