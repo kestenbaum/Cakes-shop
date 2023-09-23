@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 
 import styles from "@/app/basket/basket.module.css"
-import MainButton from "@/components/MainButton/MainButton";
+import MainButton from "@/components/UI/MainButton/MainButton";
 import AsideBasket from "@/components/AsideBasket/AsideBasket";
 
 const Page: FC = () => {

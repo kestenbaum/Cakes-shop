@@ -3,9 +3,9 @@ import React, {FC} from 'react';
 import styles from "@/app/profile/profile.module.css"
 
 import ProfileAsideElement from "@/components/Profile/ProfileAsideElement";
-import Accordion from "@/components/Accordion/Accordion";
+import Accordion from "@/components/UI/Accordion/Accordion";
 
-import {getAsideProfilePage, getMenuProfilePage} from "@/data/index"
+import {getAsideProfilePage, getMenuProfilePage} from "@/data"
 const Page:FC = () => {
     return (
         <section

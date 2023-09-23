@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from 'react';
 
-import styles from "@/components/Accordion/Accordion.module.css"
+import styles from "@/components/UI/Accordion/Accordion.module.css"
 import {FaArrowAltCircleDown, FaArrowAltCircleUp} from "react-icons/fa";
 const Accordion = (props:any) => {
     const [isShowing, setIsShowing] = useState(false);

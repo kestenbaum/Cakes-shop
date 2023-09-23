@@ -2,8 +2,8 @@
 import React, {FC, useState} from 'react';
 
 import styles from "@/components/AsideBasket/AsideBasket.module.css";
-import MainButton from "@/components/MainButton/MainButton";
-import Modal from "@/components/Modal/Modal";
+import MainButton from "@/components/UI/MainButton/MainButton";
+import Modal from "@/components/UI/Modal/Modal";
 
 const AsideBasket:FC = () => {
     const [open, setOpen] = useState<boolean>(false)

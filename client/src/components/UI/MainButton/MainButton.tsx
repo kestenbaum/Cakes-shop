@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import styles from "@/components/MainButton/MainButton.module.css"
+import styles from "@/components/UI/MainButton/MainButton.module.css"
 import {IButton} from "@/interface";
 
 const MainButton:FC<IButton> = (props) => {
