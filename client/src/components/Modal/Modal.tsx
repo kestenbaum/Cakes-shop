@@ -1,22 +1,23 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 
-import styles from "@/components/Modal/Modal.module.css"
+import "./modal.css"
 
 interface IModal {
-    active: boolean,
-    setActive: any,
-    children: any
+    children: React.ReactNode,
+    showModal: boolean,
+    setShowModal: any
 }
-const Modal:FC<IModal> = ({active, setActive, children}) => {
 
-    const rootClasses:string[] = [styles.modal]
-    if (active) rootClasses.push(styles.active)
-
+const Modal:FC<IModal> = ({children, showModal, setShowModal}) => {
     return (
         <section
-            className={rootClasses.join(" ")}
+            className={showModal ? "modal active" : "modal"}
+            onClick={() => setShowModal(false)}
         >
-            <div className={styles.wrapper}>
+            <div
+                className={showModal ? "wrapper active" : "wrapper"}
+                onClick={e => e.stopPropagation()}
+            >
                 {children}
             </div>
         </section>
