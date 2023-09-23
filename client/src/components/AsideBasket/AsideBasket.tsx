@@ -6,7 +6,7 @@ import MainButton from "@/components/MainButton/MainButton";
 import Modal from "@/components/Modal/Modal";
 
 const AsideBasket:FC = () => {
-    const [active, setActive] = useState(false)
+    const [open, setOpen] = useState<boolean>(false)
 
     return (
         <div className={styles.aside}>
@@ -25,12 +25,12 @@ const AsideBasket:FC = () => {
             </div>
             <div className={styles.promocode}>
                 <MainButton
-                    onClick={() => setActive(true)}
+                    onClick={() => setOpen(true)}
                 >
                     У вас есть промокод?
                 </MainButton>
-                <Modal active={active} setActive={() => setActive(active)}>
-                    promocode
+                <Modal showModal={open} setShowModal={setOpen}>
+                    Content
                 </Modal>
             </div>
             <MainButton>Продолжить</MainButton>
