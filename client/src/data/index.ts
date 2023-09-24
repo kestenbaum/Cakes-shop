@@ -1,5 +1,7 @@
 import {FooterMenuProps, IconsProps, IProfileAsideElement, IProfileMenuElement, NavProps} from "@/interface";
 
+import testImg from "@/assets/Frame 76.png"
+
 import {CgProfile} from "react-icons/cg";
 import {MdOutlineContactMail} from "react-icons/md";
 import {BsReverseListColumnsReverse, BsTruck} from "react-icons/bs";
@@ -189,4 +191,162 @@ export const getMenuProfilePage:IProfileMenuElement[] = [
         title: 'Дополнительная информация',
         content: "Дополнительная информация"
     }
+]
+
+export const getMainProductTest = [
+    {
+        cakes: [
+            {
+                id: 1,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 2,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 3,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 4,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            }
+        ],
+        news__product: [
+            {
+                id: 1,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 2,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 3,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 4,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            }
+        ],
+        sets__products: [
+            {
+                id: 1,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 2,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 3,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            },
+            {
+                id: 4,
+                title: "first",
+                img: testImg,
+                old__price: 250,
+                new__price: 157,
+                weight: 2500,
+                counter: 25,
+                country: "Ukraine",
+                description: "lorem25"
+            }
+        ],
+    }
+]
+
+export const getTitleTest = [
+    {
+        id: 1,
+        title: "Торты"
+    },
+    {
+        id: 2,
+        title: "Новинки"
+    },
+    {
+        id: 3,
+        title: "Наборы"
+    },
 ]

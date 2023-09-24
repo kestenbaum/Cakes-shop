@@ -6,6 +6,7 @@ import {RxHamburgerMenu} from "react-icons/rx"
 import {AiOutlineSearch} from "react-icons/ai"
 
 import styles from "@/app/catalog/catalog.module.css"
+import {getTitleTest} from "@/data";
 const Page:FC = () => {
     return (
         <section className={styles.wrapper}>
@@ -27,7 +28,18 @@ const Page:FC = () => {
                 </div>
             </div>
             <div className={styles.main__block}>
-                Здесь пока нечего нет...
+                {
+                    getTitleTest.length === 0 ?
+                    <p>
+                        Здесь пока нечего нет...
+                    </p>
+                    :
+                        getTitleTest.map((title) => {
+                          return <div>
+                                <h2>{title.title}</h2>
+                          </div>
+                      })
+                }
             </div>
         </section>
     );
