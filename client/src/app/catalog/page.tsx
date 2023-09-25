@@ -1,24 +1,15 @@
 import React, {FC} from 'react';
 
-import {RxHamburgerMenu} from "react-icons/rx"
-import {AiOutlineSearch} from "react-icons/ai"
-
 import PathLink from "@/components/PathLink/PathLink";
 import styles from "@/app/catalog/catalog.module.css"
+import CatalogNavigation from "@/components/CatalogNavigation/CatalogNavigation";
+
 import {getTitleTest} from "@/data";
+
 const Page:FC = () => {
     return (
         <section className={styles.wrapper}>
-            <div className={styles.navigation}>
-                <div className={styles.catalog}>
-                    <RxHamburgerMenu/>
-                    Категории
-                </div>
-                <div className={styles.search}>
-                    <AiOutlineSearch/>
-                    Поиск
-                </div>
-            </div>
+            <CatalogNavigation/>
             <PathLink/>
             <div className={styles.main__block}>
                 {
