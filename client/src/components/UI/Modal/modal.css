@@ -37,10 +37,3 @@
     transform: scale(2);
     transition: .4s all;
 }
-
-@media all and (max-width: 500px){
-    .wrapper {
-        width: 150px;
-        height: 75px;
-    }
-}
