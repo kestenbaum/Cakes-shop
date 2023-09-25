@@ -5,8 +5,9 @@ import "./modal.css"
 interface IModal {
     children: React.ReactNode,
     showModal: boolean,
-    setShowModal: any
+    setShowModal: (value:boolean) => void
 }
+
 
 const Modal:FC<IModal> = ({children, showModal, setShowModal}) => {
     return (
