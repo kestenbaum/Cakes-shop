@@ -1,4 +1,5 @@
-import React, {FC} from 'react';
+"use client"
+import React, {FC, useState} from 'react';
 
 import PathLink from "@/components/PathLink/PathLink";
 import styles from "@/app/catalog/catalog.module.css"
@@ -7,10 +8,15 @@ import CatalogNavigation from "@/components/CatalogNavigation/CatalogNavigation"
 import {getTitleTest} from "@/data";
 
 const Page:FC = () => {
+    const [path, setPath] = useState<string>("Торты")
+
     return (
         <section className={styles.wrapper}>
             <CatalogNavigation/>
-            <PathLink/>
+            <PathLink
+                path={path}
+                setPath={setPath}
+            />
             <div className={styles.main__block}>
                 {
                     getTitleTest.length === 0 ?
@@ -20,7 +26,9 @@ const Page:FC = () => {
                     :
                         getTitleTest.map((title) => {
                           return <div>
-                                <h2>{title.title}</h2>
+                                <h2
+                                    onClick={() => setPath(title.title)}
+                                >{title.title}</h2>
                           </div>
                       })
                 }
