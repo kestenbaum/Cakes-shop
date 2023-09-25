@@ -195,145 +195,147 @@ export const getMenuProfilePage:IProfileMenuElement[] = [
 
 export const getMainProductTest = [
     {
-        cakes: [
-            {
-                id: 1,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 2,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 3,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 4,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            }
-        ],
-        news__product: [
-            {
-                id: 1,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 2,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 3,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 4,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            }
-        ],
-        sets__products: [
-            {
-                id: 1,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 2,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 3,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            },
-            {
-                id: 4,
-                title: "first",
-                img: testImg,
-                old__price: 250,
-                new__price: 157,
-                weight: 2500,
-                counter: 25,
-                country: "Ukraine",
-                description: "lorem25"
-            }
-        ],
-    }
+        id: 1,
+        category: 1,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 2,
+        category: 1,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 3,
+        category: 1,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 4,
+        category: 1,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 5,
+        category: 2,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    }, {
+        id: 6,
+        category: 2,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    }, {
+        id: 7,
+        category: 2,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 8,
+        category: 2,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 9,
+        category: 3,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 10,
+        category: 3,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 11,
+        category: 3,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
+    {
+        id: 12,
+        category: 3,
+        title: "first",
+        img: testImg,
+        old__price: 250,
+        new__price: 157,
+        weight: 2500,
+        counter: 25,
+        country: "Ukraine",
+        description: "lorem25"
+    },
 ]
 
 export const getTitleTest = [
