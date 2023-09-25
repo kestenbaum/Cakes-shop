@@ -1,10 +1,9 @@
 import React, {FC} from 'react';
 
-import Link from "next/link";
-
 import {RxHamburgerMenu} from "react-icons/rx"
 import {AiOutlineSearch} from "react-icons/ai"
 
+import PathLink from "@/components/PathLink/PathLink";
 import styles from "@/app/catalog/catalog.module.css"
 import {getTitleTest} from "@/data";
 const Page:FC = () => {
@@ -20,13 +19,7 @@ const Page:FC = () => {
                     Поиск
                 </div>
             </div>
-            <div className={styles.path}>
-                <div className={styles.pathItem}>
-                    <Link href={"/"}>Главная</Link>
-                    <div className={styles.colorBlock}></div>
-                    <Link href={"/catalog"}>Каталог</Link>
-                </div>
-            </div>
+            <PathLink/>
             <div className={styles.main__block}>
                 {
                     getTitleTest.length === 0 ?

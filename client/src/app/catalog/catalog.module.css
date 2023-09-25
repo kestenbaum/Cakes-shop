@@ -24,25 +24,6 @@
     gap: 6px;
 }
 
-/*path*/
-.path {
-    display: flex;
-    padding: 20px 0;
-}
-
-.colorBlock {
-    display: flex;
-    height: 7px;
-    width: 12px;
-    background-color: #F8BDBD;
-}
-
-.pathItem {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
 /* main page */
 .main__block {
     height: 100%;
