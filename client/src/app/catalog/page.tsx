@@ -7,6 +7,7 @@ import CatalogNavigation from "@/components/CatalogNavigation/CatalogNavigation"
 
 import {getMainProductTest, getTitleTest} from "@/data";
 import MainButton from "@/components/UI/MainButton/MainButton";
+import CardCatalog from "@/components/CardCatalog/CardCatalog";
 
 
 const Page:FC = () => {
@@ -45,15 +46,12 @@ const Page:FC = () => {
                             className={styles.catalog}
                         >
                             {getMainProductTest.map(element=> {
-                                return <div>
-                                    {element.title}
-                                    {element.old__price}
-                                    {element.new__price}
-                                    <div>
-                                        {element.category}
-                                    </div>
-                                    <MainButton>В корзину</MainButton>
-                                </div>
+                                return <CardCatalog
+                                    src={element.img}
+                                    alt={"images previous"}
+                                    link={"/"}
+                                    title={element.title}
+                                />
                             })}
                             </div>
                     </div>
