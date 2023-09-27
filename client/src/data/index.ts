@@ -197,7 +197,7 @@ export const getMainProductTest = [
     {
         id: 1,
         category: 1,
-        title: "first",
+        title: "Торты",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -209,7 +209,7 @@ export const getMainProductTest = [
     {
         id: 2,
         category: 1,
-        title: "first",
+        title: "Торты",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -221,7 +221,7 @@ export const getMainProductTest = [
     {
         id: 3,
         category: 1,
-        title: "first",
+        title: "Торты",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -233,7 +233,7 @@ export const getMainProductTest = [
     {
         id: 4,
         category: 1,
-        title: "first",
+        title: "Торты",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -245,7 +245,7 @@ export const getMainProductTest = [
     {
         id: 5,
         category: 2,
-        title: "first",
+        title: "Новинки",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -256,7 +256,7 @@ export const getMainProductTest = [
     }, {
         id: 6,
         category: 2,
-        title: "first",
+        title: "Новинки",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -267,7 +267,7 @@ export const getMainProductTest = [
     }, {
         id: 7,
         category: 2,
-        title: "first",
+        title: "Новинки",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -279,7 +279,7 @@ export const getMainProductTest = [
     {
         id: 8,
         category: 2,
-        title: "first",
+        title: "Новинки",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -291,7 +291,7 @@ export const getMainProductTest = [
     {
         id: 9,
         category: 3,
-        title: "first",
+        title: "Наборы",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -303,7 +303,7 @@ export const getMainProductTest = [
     {
         id: 10,
         category: 3,
-        title: "first",
+        title: "Наборы",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -315,7 +315,7 @@ export const getMainProductTest = [
     {
         id: 11,
         category: 3,
-        title: "first",
+        title: "Наборы",
         img: testImg,
         old__price: 250,
         new__price: 157,
@@ -327,7 +327,7 @@ export const getMainProductTest = [
     {
         id: 12,
         category: 3,
-        title: "first",
+        title: "Наборы",
         img: testImg,
         old__price: 250,
         new__price: 157,
