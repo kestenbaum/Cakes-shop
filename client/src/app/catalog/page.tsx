@@ -17,7 +17,7 @@ const Page:FC = () => {
         setCategory(id)
         setPath(title)
     }
-    console.log(`${pathname}/${3}`)
+
     return (
         <section className={styles.wrapper}>
             <CatalogNavigation/>
