@@ -7,7 +7,40 @@
 }
 
 /* main page */
-.main__block {
+.block {
+    display: flex;
     height: 100%;
     min-height: calc(100vh - 104px - 265px);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    flex: 0 0 20%;
+    border-right: 2px solid black;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    border: 2px solid #F8BDBD;
+}
+
+.catalog {
+    display: flex;
+    height: 100%;
+    flex: 0 0 80%;
+    padding: 20px;
 }
