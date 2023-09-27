@@ -1,18 +1,23 @@
 "use client"
 import React, {FC, useState} from 'react';
 
-import PathLink from "@/components/PathLink/PathLink";
-import styles from "@/app/catalog/catalog.module.css"
-import CatalogNavigation from "@/components/CatalogNavigation/CatalogNavigation";
-
-import {getMainProductTest, getTitleTest} from "@/data";
-import MainButton from "@/components/UI/MainButton/MainButton";
 import CardCatalog from "@/components/CardCatalog/CardCatalog";
+import CatalogNavigation from "@/components/CatalogNavigation/CatalogNavigation";
+import PathLink from "@/components/PathLink/PathLink";
+import {getMainProductTest, getTitleTest} from "@/data";
 
+import styles from "@/app/catalog/catalog.module.css"
+import {usePathname} from "next/navigation";
 
 const Page:FC = () => {
     const [path, setPath] = useState<string>("Торты")
-
+    const [category, setCategory] = useState<number>(1)
+    const pathname = usePathname()
+    const changeStateElement= (id: number, title:string) => {
+        setCategory(id)
+        setPath(title)
+    }
+    console.log(`${pathname}/${3}`)
     return (
         <section className={styles.wrapper}>
             <CatalogNavigation/>
@@ -36,7 +41,7 @@ const Page:FC = () => {
                             {getTitleTest.map(tab => {
                                 return <div
                                     className={styles.tab}
-                                    onClick={() => setPath(tab.title)}
+                                    onClick={() => changeStateElement(tab.id, tab.title)}
                                 >
                                     {tab.title}
                                 </div>
@@ -45,11 +50,13 @@ const Page:FC = () => {
                         <div
                             className={styles.catalog}
                         >
-                            {getMainProductTest.map(element=> {
+                            {getMainProductTest
+                                .filter(item => item.category === category)
+                                .map(element=> {
                                 return <CardCatalog
                                     src={element.img}
                                     alt={"images previous"}
-                                    link={"/"}
+                                    link={`${pathname}/${element.category}`}
                                     title={element.title}
                                 />
                             })}
