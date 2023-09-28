@@ -1,12 +1,9 @@
 import React, {FC} from 'react';
 import Link from "next/link";
 
+import {IPathLink} from "@/interface";
 import styles from "@/components/PathLink/PathLink.module.css"
 
-interface IPathLink {
-    path: string,
-    setPath: (path:string) => void
-}
 const PathLink:FC<IPathLink> = ({path}) => {
     return (
         <div className={styles.path}>

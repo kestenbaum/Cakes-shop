@@ -11,8 +11,6 @@ import apple from "@/assets/icons/apple.png"
 
 import {getFooterMenu} from "@/data";
 
-
-
 const Footer:FC = () => {
     return (
         <footer className={styles.footer}>

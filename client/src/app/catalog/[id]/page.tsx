@@ -1,13 +1,9 @@
 import React from 'react';
 
 import {getMainProductTest} from "@/data";
-import "./style.css"
+import {IPage} from "@/interface";
 
-type IPage = {
-    params: {
-        id: string
-    }
-}
+import "./style.css"
 
 const Page = ({params: {id}}: IPage) => {
 

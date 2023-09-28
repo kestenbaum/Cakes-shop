@@ -1,4 +1,4 @@
-import React from "react";
+import React, {InputHTMLAttributes} from "react";
 
 export interface HeaderProps {
     background: string
@@ -60,4 +60,25 @@ export interface ICardCatalog {
     alt: string,
     link: string,
     title: string
+}
+
+export type IPage = {
+    params: {
+        id: string
+    }
+}
+
+export interface IPathLink {
+    path: string,
+    setPath: (path:string) => void
+}
+export interface IInput extends InputHTMLAttributes<HTMLInputElement>{
+    name: string,
+    label?: string
+}
+
+export interface IModal {
+    children: React.ReactNode,
+    showModal: boolean,
+    setShowModal: (value:boolean) => void
 }
