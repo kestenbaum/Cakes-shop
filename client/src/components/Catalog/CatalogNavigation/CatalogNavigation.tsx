@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import styles from "@/components/CatalogNavigation/Catalog.module.css";
+import styles from "@/components/Catalog/CatalogNavigation/Catalog.module.css";
 
 import {RxHamburgerMenu} from "react-icons/rx";
 import {AiOutlineSearch} from "react-icons/ai";

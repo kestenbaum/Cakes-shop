@@ -1,7 +1,7 @@
 "use client"
 import React, {FC, useState} from 'react';
 
-import styles from "@/components/AsideBasket/AsideBasket.module.css";
+import styles from "@/components/Aside/AsideBasket/AsideBasket.module.css";
 import MainButton from "@/components/UI/MainButton/MainButton";
 import Modal from "@/components/UI/Modal/Modal";
 import Input from "@/components/UI/Input/Input";
