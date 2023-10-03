@@ -1,4 +1,7 @@
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background: #FFEBF0;
 }
 
@@ -16,11 +19,16 @@
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    width: 100%;
+    gap: 50px;
 }
 
 .product {
     display: flex;
-    width: 70%;
     flex-direction: column;
-    gap: 10px;
+    gap: 35px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 22px 10px;
+    flex: 70%;
 }
