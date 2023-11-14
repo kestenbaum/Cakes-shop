@@ -1,8 +1,8 @@
 "use client"
 import React, {FC, useEffect, useState} from 'react';
 
-import CardCatalog from "@/components/Catalog/CardCatalog/CardCatalog";
-import CatalogNavigation from "@/components/Catalog/CatalogNavigation/CatalogNavigation";
+import CardCatalog from "@/components/Catalog/CardCatalog";
+import CatalogNavigation from "@/components/Catalog/CatalogNavigation";
 import PathLink from "@/components/PathLink/PathLink";
 import {getMainProductTest, getTitleTest} from "@/data";
 

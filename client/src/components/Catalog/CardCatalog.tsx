@@ -1,28 +1,21 @@
 import React, {FC} from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import styled from "styled-components";
 
-import styles from "./CardCatalog.module.css"
 import MainButton from "@/components/UI/MainButton/MainButton";
 import {ICardCatalog} from "@/interface";
 
 const CardCatalog:FC<ICardCatalog> = ({src, alt, link, title}) => {
     return (
-        <section
-            className={styles.wrapper}
-        >
+        <Wrapper>
             <Image
                 src={src}
                 alt={alt}
                 width={240}
                 height={150}
-                className={styles.img}
             />
-            <h2
-                className={styles.title}
-            >
-                {title}
-            </h2>
+            <Title>{title}</Title>
             <Link
                 href={link}
             >
@@ -30,8 +23,23 @@ const CardCatalog:FC<ICardCatalog> = ({src, alt, link, title}) => {
                     К товару
                </MainButton>
             </Link>
-        </section>
+        </Wrapper>
     );
 };
 
 export default CardCatalog;
+
+const Wrapper = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  gap: 20px;
+  padding: 20px;
+`
+
+const Title = styled.h2`
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+`
