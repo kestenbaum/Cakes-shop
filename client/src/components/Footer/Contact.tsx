@@ -4,17 +4,17 @@ import styled from "styled-components";
 
 const Contact:FC = () => {
     return (
-        <Contact>
+        <ContactStyle>
             <Title>Контакты</Title>
             <Number href="tel:+390876758734">+390876758734</Number>
             <LinkStyle>Бесплатный звонок по Украине</LinkStyle>
-        </Contact>
+        </ContactStyle>
     );
 };
 
 export default Contact;
 
-const Contact = styled.section`
+const ContactStyle = styled.section`
   display: flex;
   flex-direction: column;
 `
