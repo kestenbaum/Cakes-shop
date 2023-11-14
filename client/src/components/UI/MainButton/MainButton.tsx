@@ -1,11 +1,9 @@
+"use client"
 import React, {FC} from 'react';
-
 import styled from "styled-components";
 import {IButton} from "@/interface";
 
-const MainButton:FC<IButton> = (props) => {
-    const  {children, ...rest} = props
-
+const MainButton:FC<IButton> = ({children, ...rest}) => {
     return (
         <ButtonStyle {...rest} >
             <Content>{children}</Content>

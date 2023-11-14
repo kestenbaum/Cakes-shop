@@ -1,5 +1,5 @@
+"use client"
 import React, {FC} from 'react';
-
 import styled from "styled-components";
 import {IInput} from "@/interface";
 
