@@ -2,20 +2,38 @@ import React, {FC} from 'react';
 import Link from "next/link";
 
 import {IPathLink} from "@/interface";
-import styles from "@/components/PathLink/PathLink.module.css"
+import styled from "styled-components"
 
 const PathLink:FC<IPathLink> = ({path}) => {
     return (
-        <div className={styles.path}>
-            <div className={styles.pathItem}>
+        <Wrapper>
+            <Item>
                 <Link href={"/"}>Главная</Link>
-                <div className={styles.colorBlock}></div>
+                <Block/>
                 <Link href={"/catalog"}>Каталог</Link>
-                <div className={styles.colorBlock}></div>
+                <Block/>
                 <Link href={"/catalog"}>{path}</Link>
-            </div>
-        </div>
+            </Item>
+        </Wrapper>
     );
 };
 
 export default PathLink;
+
+const Wrapper = styled.div`
+  display: flex;
+  padding: 20px 0;
+`
+
+const Item = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`
+
+const Block = styled.div`
+  display: flex;
+  height: 7px;
+  width: 12px;
+  background-color: #F8BDBD;
+`
