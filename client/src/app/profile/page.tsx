@@ -1,6 +1,7 @@
+"use client"
 import React, {FC} from 'react';
 
-import styles from "@/app/profile/profile.module.css"
+import styled from "styled-components"
 
 import ProfileAsideElement from "@/components/Profile/ProfileAsideElement";
 import Accordion from "@/components/UI/Accordion/Accordion";
@@ -8,12 +9,8 @@ import Accordion from "@/components/UI/Accordion/Accordion";
 import {getAsideProfilePage, getMenuProfilePage} from "@/data"
 const Page:FC = () => {
     return (
-        <section
-            className={styles.wrapper}
-        >
-            <aside
-                className={styles.sidebar}
-            >
+        <Wrapper>
+            <Sidebar>
                 {getAsideProfilePage.map(AsideElement => {
                     return  <ProfileAsideElement
                         id={AsideElement.id}
@@ -22,26 +19,69 @@ const Page:FC = () => {
                         href={AsideElement.href}
                     />
                 })}
-            </aside>
-            <section className={styles.main}>
-                <h2
-                    className={styles.title}
-                >
+            </Sidebar>
+            <Main>
+                <Title>
                     Личные данные
-                </h2>
-                <div className={styles.block__information}>
+                </Title>
+                <Content>
                     {getMenuProfilePage.map(menuElement => {
-                        return <Accordion
+                        return <AccordionElement
                             id={menuElement.id}
-                            img={<menuElement.img className={styles.icon}/>}
+                            img={<menuElement.img/> }
                             title={menuElement.title}
                             content={menuElement.content}
                         />
                     })}
-                </div>
-            </section>
-        </section>
+                </Content>
+            </Main>
+        </Wrapper>
     );
 };
 
 export default Page;
+
+const Wrapper = styled.section`
+  display: flex;
+  gap: 20px;
+  background-color: #FFEBF0;
+  width: 100%;
+  max-width:1198px;
+  padding: 104px 15px 0;
+  margin: 0 auto;
+  height: 100%;
+  min-height: calc(100vh - 104px);
+`
+
+const Sidebar = styled.aside`
+  display: flex;
+  flex: 0 0 25%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-right: 3px solid #e9e9e9;
+`
+
+const Main = styled.section`
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 70%;
+`
+
+const Title = styled.h2`
+  font-size: 36px;
+  margin-bottom: 24px;
+  padding: 10px 0;
+`
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+`
+
+const AccordionElement = styled(Accordion)`
+  width: 24px;
+  height: 24px;
+`
