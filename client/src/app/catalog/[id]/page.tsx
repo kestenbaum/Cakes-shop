@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 import img from "@/assets/Frame 76.png"
@@ -6,7 +7,7 @@ import MainButton from "@/components/UI/MainButton/MainButton";
 import {getMainProductTest} from "@/data";
 import {IPage} from "@/interface";
 
-import "./style.css"
+import styled from "styled-components"
 import Image from "next/image";
 
 
@@ -15,32 +16,66 @@ const Page = ({params: {id}}: IPage) => {
         = getMainProductTest.find(product => Number(id) === product.category)
 
     return (
-        <section className={"wrapper"}>
-            <div className="content">
-                <div className={"block"}>
-                    <div className={"info"}>
-                        <h2 className={"title"}>{element?.title}</h2>
+        <Wrapper>
+            <Content>
+                <Block>
+                    <Info>
+                        <h2>{element?.title}</h2>
                         <p>{element?.description}</p>
                         <span>Страна производитель: {element?.country}</span>
-                        <div className={"price"}>
+                        <Price>
                             <span>Старая цена {element?.old__price} Гривен</span>
                             <span>Новая цена {element?.new__price} Гривен</span>
-                        </div>
+                        </Price>
                         <span>Вес: {element?.weight} гр</span>
                         <div>
                             <MainButton>В корзину</MainButton>
                         </div>
-                    </div>
+                    </Info>
                     <div>
                         <Image
                             src={img}
                             alt={"image for element"}
                         />
                     </div>
-                </div>
-            </div>
-        </section>
+                </Block>
+            </Content>
+        </Wrapper>
     );
 };
 
 export default Page;
+
+const Wrapper = styled.section`
+  background-color: #FFEBF0;
+  width: 100%;
+  max-width: 1198px;
+  padding: 104px 15px 0;
+  margin: 0 auto;
+`
+
+const Content = styled.div`
+  display: flex;
+  height: 100%;
+  min-height: calc(100vh - 104px - 188px);
+`
+
+const Block = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 50px;
+`
+
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 80%;
+  padding: 20px;
+`
+
+const Price = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`
