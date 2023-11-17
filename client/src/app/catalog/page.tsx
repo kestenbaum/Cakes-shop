@@ -6,6 +6,7 @@ import CatalogNavigation from "@/components/Catalog/CatalogNavigation";
 import PathLink from "@/components/PathLink/PathLink";
 import {getMainProductTest, getTitleTest} from "@/data";
 
+import styled from "styled-components"
 import styles from "@/app/catalog/catalog.module.css"
 import {usePathname} from "next/navigation";
 import MainButton from "@/components/UI/MainButton/MainButton";
@@ -79,37 +80,30 @@ const Page: FC = () => {
     }
 
     return (
-        <section className={styles.wrapper}>
+        <Wrapper>
             <CatalogNavigation/>
             <PathLink
                 path={path}
                 setPath={setPath}
             />
-            <div className={styles.block}>
+            <Block>
                 {
                     getTitleTest.length === 0 ?
                         <span>
                         Здесь пока нечего нет...
                     </span>
                         :
-                        <div
-                            className={styles.content}
-                        >
-                            <div
-                                className={styles.tabs}
-                            >
+                        <Content>
+                            <Tabs>
                                 {getTitleTest.map(tab => {
-                                    return <div
-                                        className={styles.tab}
+                                    return <Tab
                                         onClick={() => changeStateElement(tab.id, tab.title)}
                                     >
                                         {tab.title}
-                                    </div>
+                                    </Tab>
                                 })}
-                            </div>
-                            <div
-                                className={styles.catalog}
-                            >
+                            </Tabs>
+                            <Catalog>
                                 {getMainProductTest
                                     .filter(item => item.category === category)
                                     .map(element => {
@@ -127,12 +121,61 @@ const Page: FC = () => {
                                 })}
                                 <MainButton onClick={() => Registration()}>Registration</MainButton>
                                 <MainButton onClick={() => Login()}>Login</MainButton>
-                            </div>
-                        </div>
+                            </Catalog>
+                        </Content>
                 }
-            </div>
-        </section>
+            </Block>
+        </Wrapper>
     );
 };
 
 export default Page;
+
+const Wrapper = styled.section`
+  background-color: #FFEBF0;
+  width: 100%;
+  max-width:1198px;
+  padding: 104px 15px 0;
+  margin: 0 auto;
+`
+
+const Block = styled.div`
+  display: flex;
+  height: 100%;
+  min-height: calc(100vh - 104px - 265px);
+`
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+const Tabs = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 300px;
+  border-right: 2px solid black;
+`
+
+const Tab = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid #F8BDBD;
+`
+
+const Catalog = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
+  flex: 0 0 80%;
+  padding: 20px;
+`
