@@ -1,13 +1,11 @@
 "use client"
 import React, {FC, useEffect, useState} from 'react';
-
+import styled from "styled-components"
 import Link from "next/link";
 import Image from 'next/image'
 import {usePathname} from "next/navigation";
-
 import {RxHamburgerMenu} from "react-icons/rx"
 
-import styled from "styled-components"
 import {getDataIcons, getDataNav} from "@/data";
 import {HeaderProps} from "@/interface";
 
