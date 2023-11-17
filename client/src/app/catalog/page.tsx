@@ -7,7 +7,6 @@ import PathLink from "@/components/PathLink/PathLink";
 import {getMainProductTest, getTitleTest} from "@/data";
 
 import styled from "styled-components"
-import styles from "@/app/catalog/catalog.module.css"
 import {usePathname} from "next/navigation";
 import MainButton from "@/components/UI/MainButton/MainButton";
 
