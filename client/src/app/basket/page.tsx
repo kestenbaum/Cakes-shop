@@ -32,7 +32,9 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #FFEBF0;
+  max-width:1198px;
+  padding: 104px 15px 0;
+  margin: 0 auto;
 `
 
 const Title = styled.h1`
@@ -51,6 +53,10 @@ const Basket = styled.section`
   margin-top: 25px;
   width: 100%;
   gap: 50px;
+  padding-bottom: 25px;
+  @media all and (max-width: 768px){
+    flex-direction: column;
+  }
 `
 
 const Product = styled.div`

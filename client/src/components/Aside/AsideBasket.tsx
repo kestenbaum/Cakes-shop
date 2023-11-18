@@ -14,15 +14,21 @@ const AsideBasket:FC = () => {
             <Title>Ваша корзина</Title>
             <Block>
                 <Title $primary>Сумма без скидок</Title>
-                <Title $primary>2500</Title>
+                <Title $primary>2500
+                    <Price>грн</Price>
+                </Title>
             </Block>
             <Block>
                 <Title $primary>Скидка по акциям</Title>
-                <Title $primary>501</Title>
+                <Title $primary>501
+                    <Price>грн</Price>
+                </Title>
             </Block>
             <Block $aside>
                 <Title $primary>Итого</Title>
-                <Title $primary>1999</Title>
+                <Title $primary>1999
+                    <Price>грн</Price>
+                </Title>
             </Block>
             <Promo>
                 <MainButton
@@ -66,6 +72,13 @@ const Title = styled.h2<{ $primary?: boolean}>`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+`
+
+const Price = styled.span`
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-left: 5px;
 `
 
 const Block = styled.div<{ $aside?: boolean}>`
