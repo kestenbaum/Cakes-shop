@@ -21,6 +21,9 @@ const ButtonStyle = styled.button`
   border: 1px solid #FF5151;
   cursor: pointer;
   transition: 0.3s;
+  @media all and (max-width: 360px){
+    padding: 5px;
+  }
 `
 
 const Content = styled.span`
@@ -32,5 +35,8 @@ const Content = styled.span`
   color: #FF5151;
   :hover{
     transform: scale(1.05);
+  }
+  @media all and (max-width: 360px){
+    font-size: 11px;
   }
 `
