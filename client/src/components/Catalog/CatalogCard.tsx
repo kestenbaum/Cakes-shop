@@ -6,7 +6,7 @@ import styled from "styled-components";
 import MainButton from "@/components/UI/MainButton/MainButton";
 import {ICardCatalog} from "@/interface";
 
-const CardCatalog:FC<ICardCatalog> = ({src, alt, link, title}) => {
+const CatalogCard:FC<ICardCatalog> = ({src, alt, link, title}) => {
     return (
         <Wrapper>
             <Image
@@ -27,7 +27,7 @@ const CardCatalog:FC<ICardCatalog> = ({src, alt, link, title}) => {
     );
 };
 
-export default CardCatalog;
+export default CatalogCard;
 
 const Wrapper = styled.section`
   display: flex;

@@ -86,3 +86,12 @@ export interface IModal {
 export interface IHeaderMenu {
     props: boolean
 }
+
+export interface ICatalogProducts {
+    pathname: string;
+    category: number;
+}
+
+export interface ICatalogSidebar {
+    props: (a:number, b:string) => void
+}
