@@ -8,7 +8,7 @@ import background from "../assets/main.png"
 
 const Page:FC = () => {
     return (
-        <>
+        <Wrapper>
             <Image
                 alt="Mountains"
                 src={background}
@@ -25,17 +25,23 @@ const Page:FC = () => {
                     К сладостям
                 </Title>
             </Content>
-        </>
+        </Wrapper>
     );
 };
 
 export default Page;
 
+const Wrapper = styled.div`
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+`
+
 const Content = styled.div`
-  height: calc(100vh - 124px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
 `
 
