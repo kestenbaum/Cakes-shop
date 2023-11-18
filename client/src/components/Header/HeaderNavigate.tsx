@@ -38,4 +38,7 @@ const List = styled.li`
 const LinkStyle = styled(Link)`
   font-size: 19px;
   color: #000;
+  @media all and (max-width: 550px){
+    font-size: 12px;
+  }
 `

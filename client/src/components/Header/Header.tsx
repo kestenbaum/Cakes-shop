@@ -74,4 +74,10 @@ const BurgerMenu = styled.div`
     display: flex;
     cursor: pointer;
   }
+  @media all and (max-width: 350px){
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+  }
 `
