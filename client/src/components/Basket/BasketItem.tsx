@@ -27,7 +27,9 @@ const BasketItem:FC = () => {
                     <Value>Грн</Value>
                 </Price>
             </PriceBlock>
-            <MainButton>Удалить</MainButton>
+            <DeleteButton>
+                <MainButton>Удалить</MainButton>
+            </DeleteButton>
         </Wrapper>
     );
 };
@@ -77,4 +79,10 @@ const Value = styled.span<{$primary?:string}>`
   color: ${props => props.$primary};
   font-weight: bold;
   margin-left: 5px;
+`
+
+const DeleteButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
