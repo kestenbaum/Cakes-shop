@@ -4,6 +4,7 @@ import React, {FC} from 'react';
 import styled from "styled-components";
 import MainButton from "@/components/UI/MainButton/MainButton";
 import AsideBasket from "@/components/Aside/AsideBasket";
+import BasketItem from "@/components/Basket/BasketItem";
 
 const Page: FC = () => {
     return (
@@ -15,7 +16,13 @@ const Page: FC = () => {
             <Basket>
                 <Product>
                     {true ?
-                        <span>Товаров пока нет</span>
+                        <>
+                            <span>Товаров пока нет</span>
+                            <BasketItem/>
+                            <BasketItem/>
+                            <BasketItem/>
+                            <BasketItem/>
+                        </>
                         :
                         null
                     }
