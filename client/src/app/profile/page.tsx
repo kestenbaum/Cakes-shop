@@ -52,6 +52,9 @@ const Wrapper = styled.section`
   margin: 0 auto;
   height: 100%;
   min-height: calc(100vh - 104px);
+  @media all and (max-width: 850px){
+    flex-direction: column;
+  }
 `
 
 const Sidebar = styled.aside`
@@ -61,6 +64,10 @@ const Sidebar = styled.aside`
   gap: 10px;
   padding: 10px;
   border-right: 3px solid #e9e9e9;
+  @media all and (max-width: 850px){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `
 
 const Main = styled.section`
