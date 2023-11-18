@@ -1,8 +1,8 @@
 "use client"
 import React, {useState} from 'react';
 
-import styled from "styled-components";
-import {FaArrowAltCircleDown, FaArrowAltCircleUp} from "react-icons/fa";
+import styled, {keyframes} from "styled-components";
+import {FaArrowAltCircleDown} from "react-icons/fa";
 const Accordion = (props:any) => {
     const [isShowing, setIsShowing] = useState(false);
     const toggle = () => setIsShowing(!isShowing);
@@ -17,7 +17,7 @@ const Accordion = (props:any) => {
                     {props.img}
                     <span>{props.title}</span>
                 </Title>
-                {isShowing ? <ArrowUp/> : <ArrowDown/>}
+                <ArrowDown $props={isShowing}/>
             </Button>
             <Content
                 $props={isShowing}
@@ -35,7 +35,6 @@ const Wrapper = styled.div`
   width: 100%;
   margin-bottom: 15px;
   line-height: 15px;
-  border: 1px solid rgba(209, 213, 219, 0.5);
 `
 
 const Button = styled.button`
@@ -51,10 +50,6 @@ const Button = styled.button`
   transition: all .2s ease-in-out;
   border: 3px solid #e9e9e9;
   border-radius: 4px;
-  margin-bottom: 10px ;
-  :hover{
-    background-color: #CA8B81;
-  }
 `
 
 const Title = styled.p`
@@ -64,17 +59,25 @@ const Title = styled.p`
   gap: 10px;
 `
 
-const ArrowUp = styled(FaArrowAltCircleUp)`
-  width: 24px;
-  height: 24px;
+const AnimationArrow = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 `
 
-const ArrowDown = styled(FaArrowAltCircleDown)`
+const ArrowDown = styled(FaArrowAltCircleDown)<{$props:boolean}>`
   width: 24px;
   height: 24px;
+  animation: .3s linear forwards;
+  animation-name: ${props => props.$props && AnimationArrow};
+  animation-duration: .3s;
+  animation-iteration-count: 1;
 `
 
-const Content = styled.div<{$props?: boolean}>`
+const Content = styled.div<{$props: boolean}>`
   display: ${props => props.$props ? "block" : "none"};
   width: 100%;
   position: relative;
@@ -82,4 +85,5 @@ const Content = styled.div<{$props?: boolean}>`
   transition: all .2s ease-in-out;
   border: 3px solid #e9e9e9;
   border-radius: 4px;
+  margin-top: 10px;
 `
