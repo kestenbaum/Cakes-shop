@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 import Link from "next/link";
 import Image from "next/image"
 
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import background from "../assets/main.png"
 
 const Page:FC = () => {
@@ -43,6 +43,17 @@ const Content = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  :hover{
+    transform: scale(1.03);
+    transition: .3s;
+  }
+`
+
+const ScaleAnimation = keyframes`
+  0% { height: 69px; width: 250px; font-size: 17px;}
+  30% { height: 75px; width: 275px; font-size: 25px;}
+  40% { height: 85px; width: 325px; font-size: 30px;}
+  100% { height: 97px; width: 380px; font-size: 50px;}
 `
 
 const Title = styled(Link)`
@@ -63,6 +74,9 @@ const Title = styled(Link)`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  animation-name: ${ScaleAnimation};
+  animation-duration: 4s;
+  animation-iteration-count: 1;
   @media all and (max-width: 400px){
     display: flex;
     width: 207px;
