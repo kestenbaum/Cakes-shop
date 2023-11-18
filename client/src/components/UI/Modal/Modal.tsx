@@ -44,17 +44,9 @@ const Content = styled.div<{$props?:boolean}>`
   opacity: ${props => props.$props ? 1 : 0};
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 200px;
-  padding: 25px;
   border-radius: 15px;
   background-color: #ffffff;
   color: #1a1a1a;
   transform: scale(1.02);
   transition: transform .5s ease-in-out, opacity .5s ease-in-out;
-  @media all and (max-width: 460px){
-    width: 200px;
-    height: 100px;
-    padding: 15px;
-  }
 `
