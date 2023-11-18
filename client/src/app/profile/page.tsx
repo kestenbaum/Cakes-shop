@@ -13,6 +13,7 @@ const Page:FC = () => {
             <Sidebar>
                 {getAsideProfilePage.map(AsideElement => {
                     return  <ProfileAsideElement
+                        key={AsideElement.id}
                         id={AsideElement.id}
                         img={ <AsideElement.img width={24} height={24}/>}
                         link={AsideElement.link}
