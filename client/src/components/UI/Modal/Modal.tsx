@@ -35,8 +35,8 @@ const Wrapper = styled.section<{$props?:boolean}>`
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 9999;
   pointer-events: ${props => props.$props ? "all" : "none"};
-  transform: scale(2);
-  transition: .4s all;
+  transform: scale(1.02);
+  transition: transform .5s ease-in-out, opacity .5s ease-in-out;
 `
 
 const Content = styled.div<{$props?:boolean}>`
@@ -50,6 +50,11 @@ const Content = styled.div<{$props?:boolean}>`
   border-radius: 15px;
   background-color: #ffffff;
   color: #1a1a1a;
-  transform: scale(1);
-  transition: .4s all;
+  transform: scale(1.02);
+  transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+  @media all and (max-width: 460px){
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+  }
 `
