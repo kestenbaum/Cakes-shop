@@ -14,7 +14,7 @@ export default function RootLayout({children}: {
 }) {
     return (
         <>
-            <Header background={"#CA8B81"}/>
+            <Header/>
                 {children}
             <Footer/>
         </>
