@@ -13,6 +13,7 @@ const CatalogProducts:FC<ICatalogProducts> = ({pathname, category}) => {
                 .filter(item => item.category === category)
                 .map(element => {
                     return <CatalogCard
+                        key={element.id}
                         src={element.img}
                         alt={"images previous"}
                         link={`${pathname}/${element.category}`}

@@ -10,6 +10,7 @@ const CatalogSidebar:FC<ICatalogSidebar> = ({props}) => {
         <Tabs>
             {getTitleTest.map(tab => {
                 return <Tab
+                    key={tab.id}
                     onClick={() => props(tab.id, tab.title)}
                 >
                     {tab.title}
