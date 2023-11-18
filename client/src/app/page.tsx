@@ -1,41 +1,35 @@
 "use client"
 import React, {FC} from 'react';
 import Link from "next/link";
+import Image from "next/image"
 
 import styled from "styled-components";
-import background from "@/assets/main.png"
+import background from "../assets/main.png"
 
 const Page:FC = () => {
     return (
-        <Wrapper $background={background}>
-            <Container>
-                <Content>
-                    <Title href={"/catalog"}>
-                            К сладостям
-                    </Title>
-                </Content>
-            </Container>
-        </Wrapper>
+        <>
+            <Image
+                alt="Mountains"
+                src={background}
+                placeholder="blur"
+                quality={100}
+                fill
+                sizes="100vw"
+                style={{
+                    objectFit: 'cover',
+                }}>
+            </Image>
+            <Content>
+                <Title href={"/catalog"}>
+                    К сладостям
+                </Title>
+            </Content>
+        </>
     );
 };
 
 export default Page;
-
-const Wrapper = styled.section<{$background?:any}>`
-  width: 100%;  
-  padding-top: 124px;
-  height: 100vh;
-  background-image: url(${props => props.$background});
-  //background-image: url("../assets/main.png");
-  background-size: cover;
-`
-
-const Container = styled.div`
-  width: 100%;
-  max-width:1198px;
-  padding: 0 15px;
-  margin: 0 auto;
-`
 
 const Content = styled.div`
   height: calc(100vh - 124px);
