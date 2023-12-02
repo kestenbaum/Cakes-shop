@@ -2,16 +2,16 @@
 import React, {FC} from 'react';
 
 import styled from "styled-components";
-import MainButton from "@/components/UI/MainButton/MainButton";
-import AsideBasket from "@/components/Aside/AsideBasket";
-import BasketItem from "@/components/Basket/BasketItem";
+import Button from "@/shared/ui/Button/Button";
+import AsideBasket from "@/widgets/Aside/AsideBasket";
+import BasketItem from "@/features/Basket/BasketItem";
 
 const Page: FC = () => {
     return (
         <Wrapper>
             <Title>Корзина</Title>
             <div>
-                <MainButton>Очистить корзину</MainButton>
+                <Button>Очистить корзину</Button>
             </div>
             <Basket>
                 <Product>

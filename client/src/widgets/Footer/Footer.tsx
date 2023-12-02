@@ -3,9 +3,9 @@ import React, {FC} from 'react';
 
 import styled from "styled-components";
 
-import Button from "@/components/Footer/Button";
-import FooterMenu from "@/components/Footer/Menu";
-import Contact from "@/components/Footer/Contact";
+import Button from "@/widgets/Footer/Button";
+import FooterMenu from "@/widgets/Footer/Menu";
+import Contact from "@/widgets/Footer/Contact";
 
 import android from "@/assets/icons/android.png"
 import apple from "@/assets/icons/apple.png"

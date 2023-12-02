@@ -3,7 +3,7 @@ import React from 'react';
 
 import img from "@/assets/Frame 76.png"
 
-import MainButton from "@/components/UI/MainButton/MainButton";
+import Button from "@/shared/ui/Button/Button";
 import {getMainProductTest} from "@/data";
 import {IPage} from "@/interface";
 
@@ -29,7 +29,7 @@ const Page = ({params: {id}}: IPage) => {
                         </Price>
                         <span>Вес: {element?.weight} гр</span>
                         <div>
-                            <MainButton>В корзину</MainButton>
+                            <Button>В корзину</Button>
                         </div>
                     </Info>
                     <div>

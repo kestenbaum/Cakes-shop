@@ -1,7 +1,8 @@
 "use client"
 import React, {FC} from 'react';
 import styled from "styled-components";
-import {IInput} from "@/interface";
+import {IInput} from "@/shared/types";
+
 
 const Input:FC<IInput> = ({name, label, ...rest}) => {
     return (

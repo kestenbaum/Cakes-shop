@@ -4,10 +4,10 @@ import {usePathname} from "next/navigation";
 import styled from "styled-components"
 
 import {getTitleTest} from "@/data";
-import CatalogNavigation from "@/components/Catalog/CatalogNavigation";
-import PathLink from "@/components/PathLink/PathLink";
-import CatalogSidebar from "@/components/Catalog/CatalogSidebar";
-import CatalogProducts from "@/components/Catalog/CatalogProducts";
+import CatalogNavigation from "@/widgets/Catalog/CatalogNavigation";
+import PathLink from "@/widgets/PathLink/PathLink";
+import CatalogSidebar from "@/widgets/Catalog/CatalogSidebar";
+import CatalogProducts from "@/widgets/Catalog/CatalogProducts";
 
 const Page: FC = () => {
     const [path, setPath] = useState<string>("Торты")

@@ -4,9 +4,9 @@ import styled from "styled-components"
 import {usePathname} from "next/navigation";
 import {RxHamburgerMenu} from "react-icons/rx"
 
-import HeaderNavigate from "@/components/Header/HeaderNavigate";
-import HeaderLogo from "@/components/Header/HeaderLogo";
-import HeaderMenu from "@/components/Header/HeaderMenu";
+import HeaderNavigate from "@/widgets/Header/HeaderNavigate";
+import HeaderLogo from "@/widgets/Header/HeaderLogo";
+import HeaderMenu from "@/widgets/Header/HeaderMenu";
 
 const Header: FC = () => {
     const [open, setOpen] = useState(false)

@@ -1,9 +1,10 @@
 "use client"
 import React, {FC} from 'react';
 import styled from "styled-components";
-import {IButton} from "@/interface";
+import {IButton} from "@/shared/types";
 
-const MainButton:FC<IButton> = ({children, ...rest}) => {
+
+const Button:FC<IButton> = ({children, ...rest}) => {
     return (
         <ButtonStyle {...rest} >
             <Content>{children}</Content>
@@ -11,7 +12,7 @@ const MainButton:FC<IButton> = ({children, ...rest}) => {
     );
 };
 
-export default MainButton;
+export default Button;
 
 const ButtonStyle = styled.button`
   display: flex;

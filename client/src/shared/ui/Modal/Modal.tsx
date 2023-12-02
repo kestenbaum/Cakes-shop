@@ -1,12 +1,8 @@
 "use client"
 import React, {FC} from 'react';
-import styled from "styled-components"
 
-interface IModal {
-    children: React.ReactNode,
-    showModal: boolean,
-    setShowModal: (value:boolean) => void
-}
+import styled from "styled-components"
+import {IModal} from "@/shared/types";
 
 const Modal:FC<IModal> = ({children, showModal, setShowModal}) => {
     return (
