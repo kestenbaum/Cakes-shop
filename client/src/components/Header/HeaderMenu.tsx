@@ -30,13 +30,12 @@ const HeaderMenu:FC<IHeaderMenu> = ({props}) => {
 
 export default HeaderMenu;
 
-const IconsMenu = styled.ul.attrs<{$background?: string, $open?: boolean}>(props => ({
-    $background: props.$background
-}))`
+const IconsMenu = styled.ul<{$background?: string, $open?: boolean}>`
   display: flex;
   justify-content: flex-end;
   width: 100%;
   gap: 50px;
+  background: ${background => background.$background};
   @media (max-width: 768px){
     display: ${props => props.$open ? "flex" : "none"};
     gap: 20px;

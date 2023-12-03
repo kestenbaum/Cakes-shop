@@ -51,15 +51,6 @@ const Content = styled.div`
 
 const ScaleAnimation = keyframes`
   0% { height: 9.7px; width: 38px; font-size: 0;}
-  10% { height: 19.4px; width: 76px; font-size: 5px;}
-  20% { height: 29.1px; width: 114px; font-size: 10px;}
-  30% { height: 38.8px; width: 152px; font-size: 15px;}
-  40% { height: 48.5px; width: 190px; font-size: 20px;}
-  50% { height: 58.2px; width: 228px; font-size: 25px;}
-  60% { height: 67.9px; width: 266px; font-size: 30px;}
-  70% { height: 77.6px; width: 304px; font-size: 35px;}
-  80% { height: 87.3px; width: 342px; font-size: 40px;}
-  90% { height: 97px; width: 380px; font-size: 45px;}
   100% { height: 97px; width: 380px; font-size: 50px;}
 `
 

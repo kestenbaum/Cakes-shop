@@ -1,8 +1,8 @@
 "use client"
 import React, {FC, useEffect, useState} from 'react';
-import styled from "styled-components"
 import {usePathname} from "next/navigation";
 import {RxHamburgerMenu} from "react-icons/rx"
+import styled from "styled-components"
 
 import HeaderNavigate from "@/components/Header/HeaderNavigate";
 import HeaderLogo from "@/components/Header/HeaderLogo";
