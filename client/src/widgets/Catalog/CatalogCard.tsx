@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
-import MainButton from "@/components/UI/MainButton/MainButton";
+import Button from "@/shared/ui/Button/Button";
 import {ICardCatalog} from "@/interface";
 
 const CatalogCard:FC<ICardCatalog> = ({src, alt, link, title}) => {
@@ -19,9 +19,9 @@ const CatalogCard:FC<ICardCatalog> = ({src, alt, link, title}) => {
             <Link
                 href={link}
             >
-               <MainButton>
+               <Button>
                     К товару
-               </MainButton>
+               </Button>
             </Link>
         </Wrapper>
     );

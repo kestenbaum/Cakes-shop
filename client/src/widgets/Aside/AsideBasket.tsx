@@ -2,9 +2,9 @@
 import React, {FC, useState} from 'react';
 import styled from "styled-components"
 
-import MainButton from "@/components/UI/MainButton/MainButton";
-import Modal from "@/components/UI/Modal/Modal";
-import Input from "@/components/UI/Input/Input";
+import Button from "@/shared/ui/Button/Button";
+import Modal from "@/shared/ui/Modal/Modal";
+import Input from "@/shared/ui/Input/Input";
 
 const AsideBasket:FC = () => {
     const [open, setOpen] = useState<boolean>(false)
@@ -31,26 +31,26 @@ const AsideBasket:FC = () => {
                 </Title>
             </Block>
             <Promo>
-                <MainButton
+                <Button
                     onClick={() => setOpen(true)}
                 >
                     У вас есть промокод?
-                </MainButton>
+                </Button>
                 <Modal showModal={open} setShowModal={setOpen}>
                     <ModalStyle>
                         <Input
                             name={"promocode"}
                             placeholder={"У вас есть промокод?"}
                         />
-                        <MainButton
+                        <Button
                             onClick={() => setOpen(false)}
                         >
                             Применить
-                        </MainButton>
+                        </Button>
                     </ModalStyle>
                 </Modal>
             </Promo>
-            <MainButton>Продолжить</MainButton>
+            <Button>Продолжить</Button>
         </Aside>
     );
 };

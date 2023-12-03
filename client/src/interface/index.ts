@@ -52,8 +52,6 @@ export interface IProfileMenuElement {
 }
 
 
-export interface IButton extends
-    React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, React.AriaAttributes  {}
 
 export interface ICardCatalog {
     src: any,
@@ -71,16 +69,6 @@ export type IPage = {
 export interface IPathLink {
     path: string,
     setPath: (path:string) => void
-}
-export interface IInput extends InputHTMLAttributes<HTMLInputElement>{
-    name: string,
-    label?: string
-}
-
-export interface IModal {
-    children: React.ReactNode,
-    showModal: boolean,
-    setShowModal: (value:boolean) => void
 }
 
 export interface IHeaderMenu {

@@ -1,8 +1,8 @@
 import React from "react";
 import type { Metadata } from 'next'
 
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+import Header from "@/widgets/Header/Header";
+import Footer from "@/widgets/Footer/Footer";
 
 export const metadata: Metadata = {
     title: 'Profile',
@@ -14,7 +14,7 @@ export default function RootLayout({children,}: {
 }) {
     return (
         <>
-            <Header background={"#CA8B81"}/>
+            <Header/>
                 {children}
             <Footer/>
         </>

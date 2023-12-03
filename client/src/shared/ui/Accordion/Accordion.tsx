@@ -1,9 +1,9 @@
 "use client"
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 
 import styled, {keyframes} from "styled-components";
 import {FaArrowAltCircleDown} from "react-icons/fa";
-const Accordion = (props:any) => {
+const Accordion:FC = (props:any) => {
     const [isShowing, setIsShowing] = useState(false);
     const toggle = () => setIsShowing(!isShowing);
 

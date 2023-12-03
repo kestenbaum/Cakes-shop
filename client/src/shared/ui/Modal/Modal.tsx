@@ -1,7 +1,8 @@
 "use client"
 import React, {FC} from 'react';
-import {IModal} from "@/interface";
+
 import styled from "styled-components"
+import {IModal} from "@/shared/types";
 
 const Modal:FC<IModal> = ({children, showModal, setShowModal}) => {
     return (

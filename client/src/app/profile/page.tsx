@@ -3,8 +3,8 @@ import React, {FC} from 'react';
 
 import styled from "styled-components"
 
-import ProfileAsideElement from "@/components/Profile/ProfileAsideElement";
-import Accordion from "@/components/UI/Accordion/Accordion";
+import ProfileAsideElement from "@/widgets/Profile/ProfileAsideElement";
+import Accordion from "@/shared/ui/Accordion/Accordion";
 
 import {getAsideProfilePage, getMenuProfilePage} from "@/data"
 const Page:FC = () => {
@@ -26,14 +26,7 @@ const Page:FC = () => {
                     Личные данные
                 </Title>
                 <Content>
-                    {getMenuProfilePage.map(menuElement => {
-                        return <AccordionElement
-                            id={menuElement.id}
-                            img={<menuElement.img/> }
-                            title={menuElement.title}
-                            content={menuElement.content}
-                        />
-                    })}
+
                 </Content>
             </Main>
         </Wrapper>

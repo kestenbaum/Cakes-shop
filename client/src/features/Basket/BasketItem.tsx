@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Image from "next/image";
 
 import logo from "@/assets/Frame 76.png"
-import MainButton from "@/components/UI/MainButton/MainButton";
+import Button from "@/shared/ui/Button/Button";
 const BasketItem:FC = () => {
     return (
         <Wrapper>
@@ -28,7 +28,7 @@ const BasketItem:FC = () => {
                 </Price>
             </PriceBlock>
             <DeleteButton>
-                <MainButton>Удалить</MainButton>
+                <Button>Удалить</Button>
             </DeleteButton>
         </Wrapper>
     );

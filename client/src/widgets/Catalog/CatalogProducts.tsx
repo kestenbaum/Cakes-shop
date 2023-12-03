@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 import styled from "styled-components";
 
 import {getMainProductTest} from "@/data";
-import CatalogCard from "@/components/Catalog/CatalogCard";
+import CatalogCard from "@/widgets/Catalog/CatalogCard";
 import {ICatalogProducts} from "@/interface";
 
 const CatalogProducts:FC<ICatalogProducts> = ({pathname, category}) => {
